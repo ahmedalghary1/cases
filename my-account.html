@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="حسابي - متجر جرابات الهواتف">
+    <title>حسابي - متجر جرابات الهواتف</title>
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== Header Section ==================== -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-phone text-primary"></i>
+                    <span class="brand-text">جرابات برو</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex gap-2">
+                        <a href="wishlist.html" class="btn btn-outline-secondary">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <a href="cart.html" class="btn btn-outline-primary position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="position-absolute top-0 start-0 badge rounded-pill bg-danger cart-count">3</span>
+                        </a>
+                        <a href="my-account.html" class="btn btn-outline-primary active">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== Page Header ==================== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold mb-3">حسابي</h1>
+                <p class="lead text-muted">مرحباً، محمد أحمد</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Account Section ==================== -->
+    <section class="account-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Sidebar -->
+                <div class="col-lg-3">
+                    <div class="account-sidebar">
+                        <div class="user-info text-center mb-4">
+                            <div class="user-avatar mb-3">
+                                <i class="bi bi-person-circle"></i>
+                            </div>
+                            <h5 class="mb-1">محمد أحمد</h5>
+                            <p class="text-muted small mb-0">mohammed@email.com</p>
+                        </div>
+
+                        <ul class="account-menu">
+                            <li class="active">
+                                <a href="#dashboard" data-bs-toggle="tab">
+                                    <i class="bi bi-speedometer2"></i>
+                                    لوحة التحكم
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#orders" data-bs-toggle="tab">
+                                    <i class="bi bi-bag"></i>
+                                    طلباتي
+                                    <span class="badge bg-primary">3</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#wishlist" data-bs-toggle="tab">
+                                    <i class="bi bi-heart"></i>
+                                    المفضلة
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#addresses" data-bs-toggle="tab">
+                                    <i class="bi bi-geo-alt"></i>
+                                    العناوين
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#profile" data-bs-toggle="tab">
+                                    <i class="bi bi-person"></i>
+                                    المعلومات الشخصية
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#password" data-bs-toggle="tab">
+                                    <i class="bi bi-lock"></i>
+                                    تغيير كلمة المرور
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="logout()">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                    تسجيل الخروج
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <div class="tab-content">
+                        <!-- Dashboard Tab -->
+                        <div class="tab-pane active" id="dashboard">
+                            <h4 class="mb-4">لوحة التحكم</h4>
+
+                            <!-- Stats Cards -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="bi bi-bag"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <h3>12</h3>
+                                            <p>إجمالي الطلبات</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="bi bi-clock-history"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <h3>3</h3>
+                                            <p>طلبات قيد التنفيذ</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="stat-card">
+                                        <div class="stat-icon">
+                                            <i class="bi bi-heart"></i>
+                                        </div>
+                                        <div class="stat-info">
+                                            <h3>8</h3>
+                                            <p>قائمة الرغبات</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Recent Orders -->
+                            <div class="account-card">
+                                <h5 class="mb-3">آخر الطلبات</h5>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>رقم الطلب</th>
+                                                <th>التاريخ</th>
+                                                <th>الحالة</th>
+                                                <th>المبلغ</th>
+                                                <th>الإجراءات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#1234</td>
+                                                <td>2024-01-01</td>
+                                                <td><span class="badge bg-warning">قيد المعالجة</span></td>
+                                                <td>550 ريال</td>
+                                                <td><a href="order-tracking.html"
+                                                        class="btn btn-sm btn-outline-primary">تتبع</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1233</td>
+                                                <td>2023-12-28</td>
+                                                <td><span class="badge bg-info">تم الشحن</span></td>
+                                                <td>320 ريال</td>
+                                                <td><a href="order-tracking.html"
+                                                        class="btn btn-sm btn-outline-primary">تتبع</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#1232</td>
+                                                <td>2023-12-25</td>
+                                                <td><span class="badge bg-success">تم التوصيل</span></td>
+                                                <td>450 ريال</td>
+                                                <td><a href="#" class="btn btn-sm btn-outline-secondary">تفاصيل</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Orders Tab -->
+                        <div class="tab-pane" id="orders">
+                            <h4 class="mb-4">طلباتي</h4>
+                            <div class="account-card">
+                                <p>جميع طلباتك السابقة والحالية</p>
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>رقم الطلب</th>
+                                                <th>التاريخ</th>
+                                                <th>المنتجات</th>
+                                                <th>الحالة</th>
+                                                <th>المبلغ</th>
+                                                <th>الإجراءات</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#1234</td>
+                                                <td>2024-01-01</td>
+                                                <td>3 منتجات</td>
+                                                <td><span class="badge bg-warning">قيد المعالجة</span></td>
+                                                <td>550 ريال</td>
+                                                <td><a href="order-tracking.html"
+                                                        class="btn btn-sm btn-outline-primary">عرض</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Wishlist Tab -->
+                        <div class="tab-pane" id="wishlist">
+                            <h4 class="mb-4">قائمة الرغبات</h4>
+                            <p>المنتجات المفضلة لديك</p>
+                            <a href="wishlist.html" class="btn btn-primary">عرض قائمة الرغبات الكاملة</a>
+                        </div>
+
+                        <!-- Addresses Tab -->
+                        <div class="tab-pane" id="addresses">
+                            <h4 class="mb-4">عناويني</h4>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="address-card">
+                                        <div class="address-header">
+                                            <h6>العنوان الرئيسي</h6>
+                                            <span class="badge bg-primary">افتراضي</span>
+                                        </div>
+                                        <p>محمد أحمد<br>
+                                            الرياض، حي الملقا<br>
+                                            شارع الملك فهد، مبنى 123<br>
+                                            +966 50 123 4567</p>
+                                        <div class="address-actions">
+                                            <button class="btn btn-sm btn-outline-primary">تعديل</button>
+                                            <button class="btn btn-sm btn-outline-danger">حذف</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="address-card add-new">
+                                        <i class="bi bi-plus-circle"></i>
+                                        <h6>إضافة عنوان جديد</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Profile Tab -->
+                        <div class="tab-pane" id="profile">
+                            <h4 class="mb-4">المعلومات الشخصية</h4>
+                            <div class="account-card">
+                                <form>
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <label class="form-label">الاسم الأول</label>
+                                            <input type="text" class="form-control" value="محمد">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">الاسم الأخير</label>
+                                            <input type="text" class="form-control" value="أحمد">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">البريد الإلكتروني</label>
+                                            <input type="email" class="form-control" value="mohammed@email.com">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label">رقم الهاتف</label>
+                                            <input type="tel" class="form-control" value="+966 50 123 4567">
+                                        </div>
+                                        <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">حفظ التغييرات</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Password Tab -->
+                        <div class="tab-pane" id="password">
+                            <h4 class="mb-4">تغيير كلمة المرور</h4>
+                            <div class="account-card">
+                                <form>
+                                    <div class="mb-3">
+                                        <label class="form-label">كلمة المرور الحالية</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">كلمة المرور الجديدة</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">تأكيد كلمة المرور</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">تحديث كلمة المرور</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer Section ==================== -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-phone text-primary"></i>
+                        جرابات برو
+                    </h5>
+                    <p class="text-white-50">متجرك الموثوق لأفضل جرابات الهواتف المحمولة.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2024 جرابات برو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تفاصيل المنتج - متجر جرابات الهواتف">
+    <title>تفاصيل المنتج - متجر جرابات الهواتف</title>
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== Header Section ==================== -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-phone text-primary"></i>
+                    <span class="brand-text">جرابات برو</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex gap-2">
+                        <a href="wishlist.html" class="btn btn-outline-secondary">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <a href="cart.html" class="btn btn-outline-primary position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="position-absolute top-0 start-0 badge rounded-pill bg-danger cart-count">3</span>
+                        </a>
+                        <a href="login.html" class="btn btn-outline-primary">
+                            <i class="bi bi-person"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== Breadcrumb ==================== -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                    <li class="breadcrumb-item"><a href="products.html">المنتجات</a></li>
+                    <li class="breadcrumb-item active">جراب بريميوم سيليكون</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== Product Details Section ==================== -->
+    <section class="product-details-section py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Product Images Column -->
+                <div class="col-lg-6">
+                    <div class="product-gallery">
+                        <!-- Main Image -->
+                        <div class="main-image mb-3">
+                            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=600&h=600&fit=crop"
+                                alt="جراب بريميوم" class="img-fluid rounded-4" id="mainImage">
+                            <button class="wishlist-btn" onclick="toggleWishlist(this)">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- Thumbnail Images -->
+                        <div class="thumbnail-images d-flex gap-2">
+                            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=100&h=100&fit=crop"
+                                alt="" class="thumbnail active" onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=100&h=100&fit=crop"
+                                alt="" class="thumbnail" onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=100&h=100&fit=crop"
+                                alt="" class="thumbnail" onclick="changeImage(this)">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=100&h=100&fit=crop"
+                                alt="" class="thumbnail" onclick="changeImage(this)">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Info Column -->
+                <div class="col-lg-6">
+                    <div class="product-details-info">
+                        <!-- Product Badge -->
+                        <span class="badge bg-success mb-3">متوفر</span>
+
+                        <!-- Product Title -->
+                        <h1 class="product-title mb-3">جراب بريميوم سيليكون</h1>
+
+                        <!-- Product Rating -->
+                        <div class="product-rating mb-3">
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <span class="rating-count">(128 تقييم)</span>
+                        </div>
+
+                        <!-- Product Price -->
+                        <div class="product-price-section mb-4">
+                            <span class="current-price">149 ريال</span>
+                            <span class="old-price">199 ريال</span>
+                            <span class="discount-badge">خصم 25%</span>
+                        </div>
+
+                        <!-- Product Description -->
+                        <div class="product-description mb-4">
+                            <p>جراب سيليكون فاخر بتصميم أنيق يوفر حماية كاملة لهاتفك من الصدمات والخدوش. مصنوع من مواد
+                                عالية الجودة مع ملمس ناعم ومريح. يتميز بدقة القص المثالية للوصول لجميع الأزرار والمنافذ.
+                            </p>
+                        </div>
+
+                        <!-- Product Features -->
+                        <div class="product-features mb-4">
+                            <h5 class="mb-3">المميزات:</h5>
+                            <ul class="features-list">
+                                <li><i class="bi bi-check-circle-fill text-success ms-2"></i> حماية كاملة من الصدمات
+                                </li>
+                                <li><i class="bi bi-check-circle-fill text-success ms-2"></i> سيليكون عالي الجودة</li>
+                                <li><i class="bi bi-check-circle-fill text-success ms-2"></i> تصميم أنيق ورفيع</li>
+                                <li><i class="bi bi-check-circle-fill text-success ms-2"></i> مضاد للبصمات</li>
+                                <li><i class="bi bi-check-circle-fill text-success ms-2"></i> سهل التركيب والإزالة</li>
+                            </ul>
+                        </div>
+
+                        <!-- Product Options -->
+                        <div class="product-options mb-4">
+                            <!-- Phone Model -->
+                            <div class="option-group mb-3">
+                                <label class="option-label">موديل الهاتف:</label>
+                                <select class="form-select">
+                                    <option selected>iPhone 14 Pro Max</option>
+                                    <option>iPhone 14 Pro</option>
+                                    <option>iPhone 14 Plus</option>
+                                    <option>iPhone 14</option>
+                                </select>
+                            </div>
+
+                            <!-- Color -->
+                            <div class="option-group mb-3">
+                                <label class="option-label">اللون:</label>
+                                <div class="color-options">
+                                    <div class="color-option active" style="background-color: #000;" title="أسود"></div>
+                                    <div class="color-option" style="background-color: #fff; border: 1px solid #ddd;"
+                                        title="أبيض"></div>
+                                    <div class="color-option" style="background-color: #1e3a8a;" title="أزرق"></div>
+                                    <div class="color-option" style="background-color: #dc2626;" title="أحمر"></div>
+                                    <div class="color-option" style="background-color: #16a34a;" title="أخضر"></div>
+                                </div>
+                            </div>
+
+                            <!-- Quantity -->
+                            <div class="option-group mb-4">
+                                <label class="option-label">الكمية:</label>
+                                <div class="quantity-controls large">
+                                    <button class="qty-btn minus" onclick="updateQuantity(this, -1)">
+                                        <i class="bi bi-dash"></i>
+                                    </button>
+                                    <input type="number" class="qty-input" value="1" min="1" max="10" readonly>
+                                    <button class="qty-btn plus" onclick="updateQuantity(this, 1)">
+                                        <i class="bi bi-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="product-actions">
+                            <button class="btn btn-primary btn-lg flex-grow-1" onclick="addToCart()">
+                                <i class="bi bi-cart-plus ms-2"></i>
+                                إضافة إلى السلة
+                            </button>
+                            <button class="btn btn-outline-primary btn-lg" onclick="addToWishlist()">
+                                <i class="bi bi-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- Product Info -->
+                        <div class="product-meta mt-4">
+                            <div class="meta-item">
+                                <span class="meta-label">رمز المنتج:</span>
+                                <span class="meta-value">PHC-001-BLK</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">التصنيف:</span>
+                                <span class="meta-value">جرابات سيليكون</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">الوسوم:</span>
+                                <span class="meta-value">آيفون, حماية, سيليكون</span>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Info -->
+                        <div class="shipping-info-box mt-4">
+                            <div class="info-item">
+                                <i class="bi bi-truck"></i>
+                                <span>شحن مجاني للطلبات فوق 500 ريال</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-arrow-clockwise"></i>
+                                <span>إمكانية الإرجاع خلال 7 أيام</span>
+                            </div>
+                            <div class="info-item">
+                                <i class="bi bi-shield-check"></i>
+                                <span>ضمان 30 يوم على المنتج</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Tabs -->
+            <div class="product-tabs mt-5">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="tab"
+                            data-bs-target="#description">الوصف</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#specs">المواصفات</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#reviews">التقييمات (128)</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+                    <div class="tab-pane active" id="description">
+                        <h5 class="mt-4 mb-3">وصف المنتج</h5>
+                        <p>جراب بريميوم سيليكون مصمم خصيصاً لهاتف iPhone 14 Pro Max. يوفر حماية متميزة من الصدمات
+                            والخدوش مع الحفاظ على التصميم الأنيق والرفيع للهاتف.</p>
+                        <p>مصنوع من مادة السيليكون عالية الجودة التي توفر ملمساً ناعماً ومريحاً في اليد، مع خاصية مقاومة
+                            البصمات للحفاظ على مظهر الجراب نظيفاً.</p>
+                    </div>
+
+                    <div class="tab-pane" id="specs">
+                        <h5 class="mt-4 mb-3">المواصفات التقنية</h5>
+                        <table class="table">
+                            <tbody>
+                                <tr>
+                                    <td><strong>المادة</strong></td>
+                                    <td>سيليكون عالي الجودة</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>التوافق</strong></td>
+                                    <td>iPhone 14 Pro Max</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الألوان المتاحة</strong></td>
+                                    <td>أسود، أبيض، أزرق، أحمر، أخضر</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>السماكة</strong></td>
+                                    <td>1.2 ملم</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الوزن</strong></td>
+                                    <td>25 جرام</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="tab-pane" id="reviews">
+                        <h5 class="mt-4 mb-4">تقييمات العملاء</h5>
+
+                        <!-- Review 1 -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <h6 class="reviewer-name">أحمد محمد</h6>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">منذ أسبوع</span>
+                            </div>
+                            <p class="review-text">جودة ممتازة والمقاس مضبوط تماماً. الجراب خفيف ومريح ويحمي الهاتف بشكل
+                                رائع.</p>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-item">
+                            <div class="review-header">
+                                <div class="reviewer-info">
+                                    <h6 class="reviewer-name">سارة عبدالله</h6>
+                                    <div class="stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star"></i>
+                                    </div>
+                                </div>
+                                <span class="review-date">منذ أسبوعين</span>
+                            </div>
+                            <p class="review-text">جميل جداً واللون كما في الصورة. لكن أتمنى لو كان الملمس أقل نعومة
+                                قليلاً.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Related Products ==================== -->
+    <section class="related-products py-5 bg-light">
+        <div class="container">
+            <h3 class="text-center mb-4">منتجات مشابهة</h3>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=400&h=400&fit=crop"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب جلد فاخر</h5>
+                            <p class="product-device">Samsung S23 Ultra</p>
+                            <div class="product-footer">
+                                <span class="product-price">179 ريال</span>
+                                <a href="product-details.html" class="btn btn-primary btn-sm">عرض</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=400&fit=crop"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب شفاف مقاوم</h5>
+                            <p class="product-device">iPhone 13 Pro</p>
+                            <div class="product-footer">
+                                <span class="product-price">99 ريال</span>
+                                <a href="product-details.html" class="btn btn-primary btn-sm">عرض</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب رياضي مدرع</h5>
+                            <p class="product-device">Galaxy A54</p>
+                            <div class="product-footer">
+                                <span class="product-price">129 ريال</span>
+                                <a href="product-details.html" class="btn btn-primary btn-sm">عرض</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&h=400&fit=crop"
+                                alt="">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب أنيق بحامل</h5>
+                            <p class="product-device">iPhone 12</p>
+                            <div class="product-footer">
+                                <span class="product-price">139 ريال</span>
+                                <a href="product-details.html" class="btn btn-primary btn-sm">عرض</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer Section ==================== -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-phone text-primary"></i>
+                        جرابات برو
+                    </h5>
+                    <p class="text-white-50">متجرك الموثوق لأفضل جرابات الهواتف المحمولة.</p>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h5 class="mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2024 جرابات برو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
