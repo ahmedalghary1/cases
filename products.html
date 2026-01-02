@@ -28,18 +28,15 @@
     <header class="header-section">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
             <div class="container">
-                <!-- Logo -->
                 <a class="navbar-brand fw-bold" href="index.html">
                     <i class="bi bi-phone text-primary"></i>
                     <span class="brand-text">جرابات برو</span>
                 </a>
 
-                <!-- Mobile Toggle Button -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Navigation Menu -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
@@ -49,9 +46,6 @@
                             <a class="nav-link active" href="products.html">المنتجات</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#offers">العروض</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="about.html">من نحن</a>
                         </li>
                         <li class="nav-item">
@@ -59,16 +53,65 @@
                         </li>
                     </ul>
 
-                    <!-- Shopping Cart Button -->
-                    <div class="d-flex">
-                        <button class="btn btn-outline-primary position-relative">
+                    <div class="d-flex gap-2">
+                        <a href="wishlist.html" class="btn btn-outline-secondary" title="المفضلة">
+                            <i class="bi bi-heart"></i>
+                        </a>
+                        <a href="cart.html" class="btn btn-outline-primary position-relative" title="السلة">
                             <i class="bi bi-cart3"></i>
-                            <span class="position-absolute top-0 start-0 badge rounded-pill bg-danger">3</span>
-                        </button>
+                            <span
+                                class="position-absolute top-0 start-0 badge rounded-pill bg-danger cart-count">3</span>
+                        </a>
+                        <a href="my-account.html" class="btn btn-outline-primary" title="حسابي">
+                            <i class="bi bi-person"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
+    </header>
+    <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold" href="index.html">
+            <i class="bi bi-phone text-primary"></i>
+            <span class="brand-text">جرابات برو</span>
+        </a>
+
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="products.html">المنتجات</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#offers">العروض</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">من نحن</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">تواصل معنا</a>
+                </li>
+            </ul>
+
+            <!-- Shopping Cart Button -->
+            <div class="d-flex">
+                <button class="btn btn-outline-primary position-relative">
+                    <i class="bi bi-cart3"></i>
+                    <span class="position-absolute top-0 start-0 badge rounded-pill bg-danger">3</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </nav>
     </header>
 
     <!-- ==================== Page Header ==================== -->
