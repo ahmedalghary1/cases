@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تصفح مجموعتنا الكاملة من جرابات الهواتف المحمولة">
+    <title>المنتجات - متجر جرابات الهواتف</title>
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== Header Section ==================== -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-phone text-primary"></i>
+                    <span class="brand-text">جرابات برو</span>
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#offers">العروض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Shopping Cart Button -->
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span class="position-absolute top-0 start-0 badge rounded-pill bg-danger">3</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== Page Header ==================== -->
+    <section class="page-header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold mb-3">منتجاتنا</h1>
+                <p class="lead text-muted">اكتشف مجموعتنا الكاملة من جرابات الهواتف المحمولة</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Filter Section ==================== -->
+    <section class="filter-section py-4 bg-light">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>جميع الموديلات</option>
+                        <option>iPhone</option>
+                        <option>Samsung</option>
+                        <option>Xiaomi</option>
+                        <option>Oppo</option>
+                        <option>OnePlus</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>جميع الأنواع</option>
+                        <option>سيليكون</option>
+                        <option>جلد</option>
+                        <option>شفاف</option>
+                        <option>مدرع</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <select class="form-select">
+                        <option selected>ترتيب حسب</option>
+                        <option>الأحدث</option>
+                        <option>الأكثر مبيعاً</option>
+                        <option>السعر: من الأقل للأعلى</option>
+                        <option>السعر: من الأعلى للأقل</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Products Grid Section ==================== -->
+    <section class="products-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400&h=400&fit=crop"
+                                alt="جراب آيفون" class="img-fluid">
+                            <span class="product-badge">جديد</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب بريميوم سيليكون</h5>
+                            <p class="product-device">iPhone 14 Pro Max</p>
+                            <div class="product-footer">
+                                <span class="product-price">149 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=400&h=400&fit=crop"
+                                alt="جراب سامسونج" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب جلد فاخر</h5>
+                            <p class="product-device">Samsung S23 Ultra</p>
+                            <div class="product-footer">
+                                <span class="product-price">179 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=400&fit=crop"
+                                alt="جراب شفاف" class="img-fluid">
+                            <span class="product-badge bg-danger">خصم 30%</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب شفاف مقاوم</h5>
+                            <p class="product-device">iPhone 13 Pro</p>
+                            <div class="product-footer">
+                                <span class="product-price">99 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+                                alt="جراب رياضي" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب رياضي مدرع</h5>
+                            <p class="product-device">Galaxy A54</p>
+                            <div class="product-footer">
+                                <span class="product-price">129 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&h=400&fit=crop"
+                                alt="جراب أنيق" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب أنيق بحامل</h5>
+                            <p class="product-device">iPhone 12</p>
+                            <div class="product-footer">
+                                <span class="product-price">139 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1616540023441-a16a5bc7a4ed?w=400&h=400&fit=crop"
+                                alt="جراب بسيط" class="img-fluid">
+                            <span class="product-badge">الأكثر مبيعاً</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب بسيط كلاسيكي</h5>
+                            <p class="product-device">Xiaomi Redmi Note 12</p>
+                            <div class="product-footer">
+                                <span class="product-price">89 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 7 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?w=400&h=400&fit=crop"
+                                alt="جراب حديث" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب عصري مطاطي</h5>
+                            <p class="product-device">Oppo Reno 8</p>
+                            <div class="product-footer">
+                                <span class="product-price">119 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 8 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1611786490650-0f39af626efd?w=400&h=400&fit=crop"
+                                alt="جراب فخم" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب كاربون فايبر</h5>
+                            <p class="product-device">OnePlus 11</p>
+                            <div class="product-footer">
+                                <span class="product-price">159 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 9 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1617296743233-8734629f9271?w=400&h=400&fit=crop"
+                                alt="جراب جلد" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب جلد طبيعي</h5>
+                            <p class="product-device">iPhone 14</p>
+                            <div class="product-footer">
+                                <span class="product-price">199 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 10 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?w=400&h=400&fit=crop"
+                                alt="جراب رياضي" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب مقاوم للماء</h5>
+                            <p class="product-device">Samsung S22</p>
+                            <div class="product-footer">
+                                <span class="product-price">169 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 11 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1574944985070-8f3ebc6b79d2?w=400&h=400&fit=crop"
+                                alt="جراب ملون" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب سيليكون ناعم</h5>
+                            <p class="product-device">Xiaomi 13</p>
+                            <div class="product-footer">
+                                <span class="product-price">95 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 12 -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1621768216002-5ac171876625?w=400&h=400&fit=crop"
+                                alt="جراب أنيق" class="img-fluid">
+                            <span class="product-badge bg-danger">عرض خاص</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب حماية ثلاثي</h5>
+                            <p class="product-device">iPhone 13</p>
+                            <div class="product-footer">
+                                <span class="product-price">115 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">السابق</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">التالي</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- ==================== Footer Section ==================== -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-phone text-primary"></i>
+                        جرابات برو
+                    </h5>
+                    <p class="text-white-50">
+                        متجرك الموثوق لأفضل جرابات الهواتف المحمولة.
+                        نوفر لك الحماية والأناقة معاً.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="index.html#offers">العروض</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center text-white-50">
+                <p class="mb-0">
+                    &copy; 2024 جرابات برو. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

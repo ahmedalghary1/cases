@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="متجر متخصص في بيع جرابات الهواتف المحمولة بأعلى جودة وأفضل الأسعار">
+    <meta name="keywords" content="جرابات هواتف, حافظات موبايل, اكسسوارات هواتف">
+    <title>متجر جرابات الهواتف - حماية وأناقة</title>
+
+    <!-- Bootstrap 5 RTL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ==================== Header Section ==================== -->
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <!-- Logo -->
+                <a class="navbar-brand fw-bold" href="#home">
+                    <i class="bi bi-phone text-primary"></i>
+                    <span class="brand-text">جرابات برو</span>
+                </a>
+
+                <!-- Mobile Toggle Button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navigation Menu -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">المنتجات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#offers">العروض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                    <!-- Shopping Cart Button -->
+                    <div class="d-flex">
+                        <button class="btn btn-outline-primary position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span class="position-absolute top-0 start-0 badge rounded-pill bg-danger">3</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ==================== Hero Section ==================== -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">حماية وأناقة لهاتفك</h1>
+                    <p class="hero-description">
+                        اكتشف مجموعتنا الواسعة من جرابات الهواتف المحمولة بتصاميم عصرية وجودة عالية.
+                        نوفر لك الحماية الكاملة مع لمسة من الأناقة والتميز.
+                    </p>
+                    <a href="#products" class="btn btn-primary btn-lg mt-3">
+                        <i class="bi bi-search me-2"></i>
+                        تصفح الجرابات
+                    </a>
+                </div>
+                <div class="col-lg-6 hero-image">
+                    <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&h=600&fit=crop"
+                        alt="جرابات الهواتف" class="img-fluid rounded-4 shadow-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Features Section ==================== -->
+    <section id="features" class="features-section py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <h5 class="feature-title">حماية كاملة</h5>
+                        <p class="feature-text">حماية شاملة من الصدمات والخدوش</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-gem"></i>
+                        </div>
+                        <h5 class="feature-title">خامات عالية</h5>
+                        <p class="feature-text">مواد ممتازة تدوم طويلاً</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h5 class="feature-title">تصميم عصري</h5>
+                        <p class="feature-text">تشكيلة واسعة من التصاميم الأنيقة</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="feature-card text-center">
+                        <div class="feature-icon">
+                            <i class="bi bi-truck"></i>
+                        </div>
+                        <h5 class="feature-title">توصيل سريع</h5>
+                        <p class="feature-text">شحن سريع لجميع المناطق</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Products Section ==================== -->
+    <section id="products" class="products-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">منتجاتنا المميزة</h2>
+                <p class="section-subtitle">اختر الجراب المثالي لهاتفك</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=400&h=400&fit=crop"
+                                alt="جراب آيفون" class="img-fluid">
+                            <span class="product-badge">جديد</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب بريميوم سيليكون</h5>
+                            <p class="product-device">iPhone 14 Pro Max</p>
+                            <div class="product-footer">
+                                <span class="product-price">149 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591337676887-a217a6970a8a?w=400&h=400&fit=crop"
+                                alt="جراب سامسونج" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب جلد فاخر</h5>
+                            <p class="product-device">Samsung S23 Ultra</p>
+                            <div class="product-footer">
+                                <span class="product-price">179 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=400&fit=crop"
+                                alt="جراب شفاف" class="img-fluid">
+                            <span class="product-badge bg-danger">خصم</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب شفاف مقاوم</h5>
+                            <p class="product-device">iPhone 13 Pro</p>
+                            <div class="product-footer">
+                                <span class="product-price">99 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=400&h=400&fit=crop"
+                                alt="جراب رياضي" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب رياضي مدرع</h5>
+                            <p class="product-device">Galaxy A54</p>
+                            <div class="product-footer">
+                                <span class="product-price">129 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 5 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&h=400&fit=crop"
+                                alt="جراب أنيق" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب أنيق بحامل</h5>
+                            <p class="product-device">iPhone 12</p>
+                            <div class="product-footer">
+                                <span class="product-price">139 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 6 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1616540023441-a16a5bc7a4ed?w=400&h=400&fit=crop"
+                                alt="جراب بسيط" class="img-fluid">
+                            <span class="product-badge">الأكثر مبيعاً</span>
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب بسيط كلاسيكي</h5>
+                            <p class="product-device">Xiaomi Redmi Note 12</p>
+                            <div class="product-footer">
+                                <span class="product-price">89 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 7 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1622782914767-404fb9ab3f57?w=400&h=400&fit=crop"
+                                alt="جراب حديث" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب عصري مطاطي</h5>
+                            <p class="product-device">Oppo Reno 8</p>
+                            <div class="product-footer">
+                                <span class="product-price">119 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 8 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1611786490650-0f39af626efd?w=400&h=400&fit=crop"
+                                alt="جراب فخم" class="img-fluid">
+                        </div>
+                        <div class="product-info">
+                            <h5 class="product-name">جراب كاربون فايبر</h5>
+                            <p class="product-device">OnePlus 11</p>
+                            <div class="product-footer">
+                                <span class="product-price">159 ريال</span>
+                                <button class="btn btn-primary btn-sm">
+                                    <i class="bi bi-cart-plus"></i>
+                                    إضافة
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Special Offers Section ==================== -->
+    <section id="offers" class="offers-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">العروض الخاصة</h2>
+                <p class="section-subtitle">لا تفوت عروضنا المميزة</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="offer-card">
+                        <div class="offer-badge">خصم 30%</div>
+                        <img src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&h=300&fit=crop"
+                            alt="عرض خاص" class="img-fluid rounded-top">
+                        <div class="offer-content">
+                            <h4>مجموعة الأيفون</h4>
+                            <p>خصم خاص على جميع جرابات الآيفون</p>
+                            <button class="btn btn-primary w-100">اشترِ الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="offer-card">
+                        <div class="offer-badge bg-success">اشتر 2 واحصل على 1</div>
+                        <img src="https://images.unsplash.com/photo-1585060544812-6b45742d762f?w=500&h=300&fit=crop"
+                            alt="عرض خاص" class="img-fluid rounded-top">
+                        <div class="offer-content">
+                            <h4>عرض السامسونج</h4>
+                            <p>اشتر 2 واحصل على 1 مجاناً</p>
+                            <button class="btn btn-primary w-100">اشترِ الآن</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="offer-card">
+                        <div class="offer-badge bg-warning">عرض محدود</div>
+                        <img src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=500&h=300&fit=crop"
+                            alt="عرض خاص" class="img-fluid rounded-top">
+                        <div class="offer-content">
+                            <h4>المجموعة الرياضية</h4>
+                            <p>جرابات مدرعة بسعر خاص لفترة محدودة</p>
+                            <button class="btn btn-primary w-100">اشترِ الآن</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Testimonials Section ==================== -->
+    <section id="testimonials" class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">آراء عملائنا</h2>
+                <p class="section-subtitle">ثقة عملائنا هي هدفنا</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "جودة ممتازة! الجراب يحمي الهاتف بشكل رائع والتصميم أنيق جداً.
+                            أنصح الجميع بالشراء من هذا المتجر."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>أحمد محمد</strong>
+                            <small class="text-muted d-block">جدة</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "التوصيل سريع والمنتجات كما هي بالوصف تماماً.
+                            سعيدة جداً بالشراء وسأطلب المزيد."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>سارة عبدالله</strong>
+                            <small class="text-muted d-block">الرياض</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="stars mb-3">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-half"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "أسعار مناسبة وجودة عالية. خدمة العملاء ممتازة والرد سريع جداً.
+                            متجر يستحق الثقة."
+                        </p>
+                        <div class="testimonial-author">
+                            <strong>خالد السالم</strong>
+                            <small class="text-muted d-block">الدمام</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== About Section ==================== -->
+    <section id="about" class="about-section py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=600&h=400&fit=crop"
+                        alt="من نحن" class="img-fluid rounded-4 shadow">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">من نحن</h2>
+                    <p class="lead mb-4">
+                        نحن متجر متخصص في توفير أفضل جرابات الهواتف المحمولة بجودة عالية وأسعار تنافسية.
+                    </p>
+                    <p>
+                        نؤمن بأن هاتفك يستحق الحماية الأفضل، لذلك نختار لك مجموعة مميزة من الجرابات
+                        المصنوعة من أجود الخامات وبتصاميم عصرية تناسب جميع الأذواق.
+                    </p>
+                    <p>
+                        رضا عملائنا هو هدفنا الأول، ونسعى دائماً لتقديم أفضل تجربة تسوق ممكنة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Contact Section ==================== -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">تواصل معنا</h2>
+                <p class="section-subtitle">نحن هنا للإجابة على استفساراتك</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-geo-alt"></i>
+                        <h5>العنوان</h5>
+                        <p>الرياض، المملكة العربية السعودية</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-envelope"></i>
+                        <h5>البريد الإلكتروني</h5>
+                        <p>info@phonecase.sa</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card text-center">
+                        <i class="bi bi-phone"></i>
+                        <h5>الهاتف</h5>
+                        <p>+966 50 123 4567</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== Footer Section ==================== -->
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- About Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">
+                        <i class="bi bi-phone text-primary"></i>
+                        جرابات برو
+                    </h5>
+                    <p class="text-white-50">
+                        متجرك الموثوق لأفضل جرابات الهواتف المحمولة.
+                        نوفر لك الحماية والأناقة معاً.
+                    </p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="#offers">العروض</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media Column -->
+                <div class="col-lg-4">
+                    <h5 class="mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 bg-secondary">
+
+            <!-- Copyright -->
+            <div class="text-center text-white-50">
+                <p class="mb-0">
+                    &copy; 2024 جرابات برو. جميع الحقوق محفوظة.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
