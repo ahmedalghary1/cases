@@ -353,7 +353,7 @@ p {
     border-radius: var(--border-radius-md);
     transition: all var(--transition-normal);
     height: 100%;
-    \n border: 1px solid transparent;
+    border: 1px solid transparent;
     position: relative;
     overflow: hidden;
 }
