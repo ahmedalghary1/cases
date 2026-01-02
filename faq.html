@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأسئلة الشائعة - متجر جرابات الهواتف</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header-section">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">
+                    <i class="bi bi-phone text-primary"></i>
+                    <span class="brand-text">جرابات برو</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">المنتجات</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">من نحن</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="contact.html">تواصل معنا</a></li>
+                    </ul>
+                    <div class="d-flex gap-2">
+                        <a href="cart.html" class="btn btn-outline-primary position-relative">
+                            <i class="bi bi-cart3"></i>
+                            <span
+                                class="position-absolute top-0 start-0 badge rounded-pill bg-danger cart-count">0</span>
+                        </a>
+                        <a href="login.html" class="btn btn-outline-primary"><i class="bi bi-person"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="text-center">
+                <h1 class="display-4 fw-bold mb-3">الأسئلة الشائعة</h1>
+                <p class="lead text-muted">إجابات سريعة على أكثر الأسئلة شيوعاً</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="accordion" id="faqAccordion">
+                        <!-- Category: الطلب والشراء -->
+                        <h4 class="mb-3 mt-4">الطلب والشراء</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1">
+                                    كيف يمكنني تقديم طلب؟
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يمكنك تصفح المنتجات واختيار ما يناسبك، ثم الضغط على "إضافة إلى السلة". بعد إضافة
+                                    جميع المنتجات المرغوبة، انتقل إلى سلة المشتريات واضغط على "إتمام الطلب" واتبع
+                                    الخطوات لإدخال معلومات الشحن والدفع.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2">
+                                    هل يمكنني تعديل أو إلغاء طلبي؟
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يمكنك تعديل أو إلغاء طلبك خلال ساعتين من تقديمه. بعد ذلك، يتم معالجة الطلب ولا يمكن
+                                    تعديله. للإلغاء، تواصل معنا عبر خدمة العملاء.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: الشحن والتوصيل -->
+                        <h4 class="mb-3 mt-5">الشحن والتوصيل</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3">
+                                    كم تستغرق فترة التوصيل؟
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    عادة ما يتم التوصيل خلال 2-3 أيام عمل داخل الرياض، و3-5 أيام عمل لباقي مناطق
+                                    المملكة.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4">
+                                    كم تكلفة الشحن؟
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    رسوم الشحن 25 ريال لجميع أنحاء المملكة. الشحن مجاني للطلبات التي تزيد عن 500 ريال.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: الدفع -->
+                        <h4 class="mb-3 mt-5">الدفع</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq5">
+                                    ما هي طرق الدفع المتاحة؟
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نقبل الدفع عند الاستلام، بطاقات الائتمان والخصم (Visa, Mastercard, Mada)، Apple Pay،
+                                    و STC Pay.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq6">
+                                    هل الدفع آمن على موقعكم؟
+                                </button>
+                            </h2>
+                            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، نستخدم أحدث تقنيات التشفير (SSL) لحماية معلوماتك المالية. جميع معاملاتك محمية
+                                    ومشفرة.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: الإرجاع والاستبدال -->
+                        <h4 class="mb-3 mt-5">الإرجاع والاستبدال</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq7">
+                                    هل يمكنني إرجاع المنتج؟
+                                </button>
+                            </h2>
+                            <div id="faq7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، يمكنك إرجاع المنتج خلال 7 أيام من تاريخ الاستلام إذا كان في حالته الأصلية دون
+                                    استخدام. يرجى مراجعة سياسة الإرجاع الكاملة في صفحة الشروط والأحكام.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq8">
+                                    من يتحمل تكلفة الإرجاع؟
+                                </button>
+                            </h2>
+                            <div id="faq8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    العميل يتحمل تكلفة الإرجاع ما لم يكن المنتج معيباً أو حدث خطأ في الشحن من طرفنا.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: المنتجات والضمان -->
+                        <h4 class="mb-3 mt-5">المنتجات والضمان</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq9">
+                                    هل تقدمون ضمان على المنتجات؟
+                                </button>
+                            </h2>
+                            <div id="faq9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    نعم، جميع منتجاتنا تأتي بضمان لمدة 30 يوم ضد عيوب الصناعة.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq10">
+                                    كيف أعرف أن الجراب متوافق مع هاتفي?
+                                </button>
+                            </h2>
+                            <div id="faq10" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    كل منتج يحتوي على قائمة بالأجهزة المتوافقة. يمكنك أيضاً استخدام فلتر البحث في صفحة
+                                    المنتجات لعرض الجرابات المتوافقة مع موديل هاتفك فقط.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Category: الحساب -->
+                        <h4 class="mb-3 mt-5">الحساب</h4>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq11">
+                                    هل أحتاج لإنشاء حساب للشراء؟
+                                </button>
+                            </h2>
+                            <div id="faq11" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    يمكنك التسوق كضيف، لكن ننصح بإنشاء حساب لتتمكن من تتبع طلباتك وحفظ عناوينك
+                                    والاستفادة من العروض الحصرية.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item mb-3 border-0 shadow-sm">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq12">
+                                    نسيت كلمة المرور، ماذا أفعل؟
+                                </button>
+                            </h2>
+                            <div id="faq12" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    اضغط على "نسيت كلمة المرور" في صفحة تسجيل الدخول، وأدخل بريدك الإلكتروني. سنرسل لك
+                                    رابط لإعادة تعيين كلمة المرور.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-center mt-5">
+                        <p class="lead">لم تجد إجابة لسؤالك؟</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg">تواصل معنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3"><i class="bi bi-phone text-primary"></i> جرابات برو</h5>
+                    <p class="text-white-50">متجرك الموثوق لأفضل جرابات الهواتف المحمولة.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="privacy-policy.html">سياسة الخصوصية</a></li>
+                        <li><a href="terms.html">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">تابعنا</h5>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-white-50">
+                <p class="mb-0">&copy; 2024 جرابات برو. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
