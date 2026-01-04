@@ -20,8 +20,51 @@
     --black: #212529;
     --white: #ffffff;
 
-    /* Spacing */
-    --section-padding: 80px;
+    /* Spacing Scale - نظام المسافات الموحد */
+    --space-1: 0.25rem;
+    /* 4px */
+    --space-2: 0.5rem;
+    /* 8px */
+    --space-3: 0.75rem;
+    /* 12px */
+    --space-4: 1rem;
+    /* 16px */
+    --space-5: 1.25rem;
+    /* 20px */
+    --space-6: 1.5rem;
+    /* 24px */
+    --space-8: 2rem;
+    /* 32px */
+    --space-10: 2.5rem;
+    /* 40px */
+    --space-12: 3rem;
+    /* 48px */
+    --space-16: 4rem;
+    /* 64px */
+    --space-20: 5rem;
+    /* 80px */
+    --space-24: 6rem;
+    /* 96px */
+    --space-32: 8rem;
+    /* 128px */
+
+    /* Section Padding - للأقسام المختلفة */
+    --section-padding-sm: var(--space-12);
+    /* 48px - موبايل */
+    --section-padding-md: var(--space-16);
+    /* 64px - تابلت */
+    --section-padding-lg: var(--space-20);
+    /* 80px - ديسكتوب */
+
+    /* Legacy Support */
+    --section-padding: var(--space-20);
+    /* 80px - للتوافق مع الكود القديم */
+
+    /* Container Spacing */
+    --container-padding-x: var(--space-4);
+    /* 16px */
+    --container-padding-y: var(--space-6);
+    /* 24px */
 
     /* Border Radius */
     --border-radius-sm: 8px;
@@ -2157,4 +2200,457 @@ textarea.form-control {
     .footer-section {
         display: none;
     }
+}
+
+/* ==================== Responsive Spacing System ==================== */
+
+/* ========== Mobile First - الشاشات الصغيرة (افتراضي) ========== */
+/* أقل من 768px */
+
+body {
+    font-size: 15px;
+}
+
+.container {
+    padding-right: var(--space-3);
+    padding-left: var(--space-3);
+}
+
+.hero-section {
+    padding: 8rem 0 var(--space-12);
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: var(--space-4);
+}
+
+.hero-description {
+    font-size: 1rem;
+    margin-bottom: var(--space-6);
+}
+
+.hero-buttons {
+    flex-direction: column;
+    gap: var(--space-3);
+}
+
+.hero-buttons .btn {
+    width: 100%;
+    padding: var(--space-3) var(--space-4);
+}
+
+.section-header {
+    margin-bottom: var(--space-8);
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: var(--space-3);
+}
+
+.section-subtitle {
+    font-size: 1rem;
+}
+
+.feature-card,
+.product-card,
+.testimonial-card,
+.offer-card {
+    padding: var(--space-6);
+    margin-bottom: var(--space-4);
+}
+
+.product-info {
+    padding: var(--space-4);
+}
+
+.contact-info-card {
+    padding: var(--space-6) var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.footer-section {
+    padding: var(--space-10) 0;
+}
+
+/* Row Gutters */
+.row {
+    --bs-gutter-x: var(--space-4);
+    --bs-gutter-y: var(--space-4);
+}
+
+/* ========== Tablet - الشاشات المتوسطة ========== */
+/* من 768px إلى 1023px */
+@media (min-width: 768px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .container {
+        padding-right: var(--space-4);
+        padding-left: var(--space-4);
+    }
+
+    .hero-section {
+        padding: 9rem 0 var(--space-16);
+    }
+
+    .hero-title {
+        font-size: 2.75rem;
+        margin-bottom: var(--space-5);
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        margin-bottom: var(--space-8);
+    }
+
+    .hero-content {
+        padding-left: var(--space-6);
+    }
+
+    .hero-buttons {
+        flex-direction: row;
+        gap: var(--space-4);
+    }
+
+    .hero-buttons .btn {
+        width: auto;
+        padding: var(--space-3) var(--space-6);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-12);
+    }
+
+    .section-title {
+        font-size: 2.25rem;
+        margin-bottom: var(--space-4);
+    }
+
+    .section-subtitle {
+        font-size: 1.05rem;
+    }
+
+    .feature-card,
+    .testimonial-card {
+        padding: var(--space-8);
+        margin-bottom: var(--space-6);
+    }
+
+    .product-card,
+    .offer-card {
+        padding: 0;
+        margin-bottom: var(--space-6);
+    }
+
+    .product-info {
+        padding: var(--space-5);
+    }
+
+    .contact-info-card {
+        padding: var(--space-8) var(--space-6);
+        margin-bottom: 0;
+    }
+
+    .footer-section {
+        padding: var(--space-12) 0;
+    }
+
+    /* Row Gutters */
+    .row {
+        --bs-gutter-x: var(--space-5);
+        --bs-gutter-y: var(--space-5);
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: var(--space-4) 0;
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+}
+
+/* ========== Desktop - الشاشات الكبيرة ========== */
+/* من 1024px فما فوق */
+@media (min-width: 1024px) {
+
+    .container {
+        padding-right: var(--space-6);
+        padding-left: var(--space-6);
+    }
+
+    .hero-section {
+        padding: 10rem 0 var(--space-20);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        margin-bottom: var(--space-6);
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+        margin-bottom: var(--space-8);
+    }
+
+    .hero-content {
+        padding-left: var(--space-8);
+    }
+
+    .hero-buttons .btn {
+        padding: var(--space-4) var(--space-8);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-16);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: var(--space-4);
+    }
+
+    .section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .feature-card,
+    .testimonial-card {
+        padding: var(--space-10);
+    }
+
+    .product-info {
+        padding: var(--space-6);
+    }
+
+    .contact-info-card {
+        padding: var(--space-10) var(--space-8);
+    }
+
+    .footer-section {
+        padding: var(--space-16) 0;
+    }
+
+    /* Row Gutters */
+    .row {
+        --bs-gutter-x: var(--space-6);
+        --bs-gutter-y: var(--space-6);
+    }
+
+    /* Typography */
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+/* ========== Large Desktop - الشاشات الكبيرة جداً ========== */
+@media (min-width: 1400px) {
+
+    .container {
+        max-width: 1320px;
+    }
+
+    .hero-section {
+        padding: 12rem 0 var(--space-24);
+    }
+
+    .section-header {
+        margin-bottom: var(--space-20);
+    }
+
+    .feature-card,
+    .testimonial-card {
+        padding: var(--space-12);
+    }
+}
+
+/* ========== تحسينات إضافية للمسافات ========== */
+
+/* Consistent Vertical Rhythm */
+p {
+    margin-bottom: var(--space-4);
+    line-height: 1.7;
+}
+
+ul,
+ol {
+    margin-bottom: var(--space-6);
+    padding-right: var(--space-6);
+}
+
+li {
+    margin-bottom: var(--space-2);
+}
+
+/* Headings Spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: var(--space-4);
+    line-height: 1.3;
+}
+
+h1+p,
+h2+p,
+h3+p {
+    margin-top: var(--space-2);
+}
+
+/* Form Elements */
+.form-control,
+.form-select {
+    padding: var(--space-3) var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+.form-label {
+    margin-bottom: var(--space-2);
+}
+
+/* Buttons */
+.btn {
+    padding: var(--space-3) var(--space-6);
+    margin: var(--space-1);
+}
+
+.btn-sm {
+    padding: var(--space-2) var(--space-4);
+}
+
+.btn-lg {
+    padding: var(--space-4) var(--space-8);
+}
+
+/* Cards Consistency */
+.card {
+    margin-bottom: var(--space-6);
+}
+
+.card-body {
+    padding: var(--space-6);
+}
+
+.card-header,
+.card-footer {
+    padding: var(--space-4) var(--space-6);
+}
+
+/* Alerts & Notifications */
+.alert {
+    padding: var(--space-4);
+    margin-bottom: var(--space-4);
+}
+
+/* Badges */
+.badge {
+    padding: var(--space-1) var(--space-3);
+}
+
+/* Navigation */
+.nav-link {
+    padding: var(--space-3) var(--space-4) !important;
+    margin: 0 var(--space-1);
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: var(--space-4);
+    margin-bottom: var(--space-6);
+}
+
+/* Pagination */
+.pagination {
+    gap: var(--space-2);
+}
+
+.page-link {
+    padding: var(--space-2) var(--space-4);
+}
+
+/* Tables */
+.table {
+    margin-bottom: var(--space-6);
+}
+
+.table td,
+.table th {
+    padding: var(--space-3) var(--space-4);
+}
+
+/* Modals */
+.modal-header,
+.modal-footer {
+    padding: var(--space-4) var(--space-6);
+}
+
+.modal-body {
+    padding: var(--space-6);
+}
+
+/* Accordions */
+.accordion-item {
+    margin-bottom: var(--space-2);
+}
+
+.accordion-button {
+    padding: var(--space-4) var(--space-5);
+}
+
+.accordion-body {
+    padding: var(--space-4) var(--space-5);
+}
+
+/* Flex & Grid Gaps */
+.d-flex,
+.d-inline-flex {
+    gap: var(--space-3);
+}
+
+.gap-1 {
+    gap: var(--space-1) !important;
+}
+
+.gap-2 {
+    gap: var(--space-2) !important;
+}
+
+.gap-3 {
+    gap: var(--space-3) !important;
+}
+
+.gap-4 {
+    gap: var(--space-4) !important;
+}
+
+.gap-5 {
+    gap: var(--space-5) !important;
+}
+
+.gap-6 {
+    gap: var(--space-6) !important;
 }

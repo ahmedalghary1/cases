@@ -47,13 +47,13 @@ function updateCartTotals() {
 
     // Update displays
     if (document.querySelector('.subtotal')) {
-        document.querySelector('.subtotal').textContent = subtotal + ' ريال';
+        document.querySelector('.subtotal').textContent = subtotal + ' جنيه';
     }
     if (document.querySelector('.shipping')) {
-        document.querySelector('.shipping').textContent = shipping + ' ريال';
+        document.querySelector('.shipping').textContent = shipping + ' جنيه';
     }
     if (document.querySelector('.total-amount')) {
-        document.querySelector('.total-amount').textContent = total + ' ريال';
+        document.querySelector('.total-amount').textContent = total + ' جنيه';
     }
 }
 
