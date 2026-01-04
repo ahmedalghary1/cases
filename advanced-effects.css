@@ -394,6 +394,8 @@
     pointer-events: none;
     z-index: 9999;
     transition: transform 0.1s ease;
+    display: none;
+    /* Disabled */
 }
 
 .cursor-outline {
@@ -405,6 +407,8 @@
     pointer-events: none;
     z-index: 9998;
     transition: all 0.15s ease;
+    display: none;
+    /* Disabled */
 }
 
 /* ========== Responsive Utilities ========== */

@@ -227,6 +227,11 @@ p {
     font-size: 1.05rem;
 }
 
+.hero-buttons .btn i {
+    animation: none !important;
+    transform: none !important;
+}
+
 .hero-image {
     position: relative;
 }

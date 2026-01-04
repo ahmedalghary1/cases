@@ -291,7 +291,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new TiltEffect('.product-card, .feature-card, .testimonial-card');
 
     // Initialize custom cursor
-    new CustomCursor();
+    // new CustomCursor(); // Disabled - removed cursor trail effect
 
     // Initialize particle system on hero section
     setTimeout(() => {
